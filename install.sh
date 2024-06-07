@@ -21,6 +21,9 @@ apt install -y mc
 ##VER CONSUMO DE DISCO DE CADA DIRECTORIO
 apt install -y ncdu
 
+##VER CONSUMO DE MEMORIA y PROCESOS
+apt install -y htop
+
 ##GRUB con temas:
 apt install -y grub2-splashimages
 apt install -y plymouth plymouth-label plymouth-themes
@@ -118,8 +121,8 @@ apt --no-install-recommends install  -y arj lhasa liblz4-tool lrzip lzip lzop nc
 ##PARA HACER CAPTURAS:
 apt --no-install-recommends install -y flameshot
 
-##VIRTUALIZACIÓN DOCKER (OPCIONAL)
-#apt --no-install-recommends install -y docker docker-compose
+##NAVEGADOR WEB
+apt install --no-install-recommends firefox-esr firefox-esr-l10n-es-ar
 
 ##GIT
 apt install -y git
@@ -151,9 +154,6 @@ apt --no-install-recommends install -y imagemagick
 ##PARA CREAR DIAGRAMAS
 apt install -y dia dia-rib-network dia-shapes dia2code
 
-##DEVELOP-OPTION-0
-apt install -y neovim
-
 ##HTTP-OPTION-1 APACHE Y PHP
 #apt install -y php php-mbstring php-xml
 
@@ -173,18 +173,10 @@ apt install -y geany geany-plugins libvte-2.91
 
 ##Iconos de temas para w98
 apt install -y ./installers/se98-icon-theme/se98-icon-theme-git_0.2.13-1_all.deb
-##FreeOffice - Suite Ofimatica - Sin dependencias - Descargado desde sitio oficial
-apt install -y ./installers/softmaker-freeoffice/softmaker-freeoffice-2021_1046-01_amd64.deb
-##Navegador web Vivaldi
-apt install -y ./installers/vivaldi/vivaldi-stable_6.7.3329.35-1_amd64.deb
  
 ##################################CONFIGURACIONES NO ROOT################################### 
 ##Como usuario no root
 exit
-
-#COPIA DE APLICACIÓN TELEGRAM:
-mkdir ~/applications/
-cp -rf ./installers/Telegram ~/applications/
 
 ##ToDo COPIAR ARCHIVOS DE CONFIGURACION A LOS DIRECTORIOS OCULTOS .icewm y a los directorios ocultos en el home Y LUEGO:
 
@@ -216,12 +208,6 @@ cp -f ./home-conf-files/Xresources ~/.Xresources
 ##actualizar configuración de xterm
 xrdb -merge ~/.Xresources
 
-##CONFIGURACIÓN NVIM
-cp -rf ./home-conf-files/config/nvim ~/.config/
-cp -rf ./home-conf-files/local/share/nvim ~/.local/share/
-
 ##CONFIGURACIÓN GEANY:
 cp -rf ./home-conf-files/config/geany ~/.config/
 
-##CONFIGURACIÓN NAVEGADOR WEB:
-cp -rf ./home-conf-files/config/vivaldi ~/.config/
