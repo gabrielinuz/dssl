@@ -1,0 +1,40 @@
+## This file is intended to be customized by the distributions.
+## (they should place it in /etc/X11/icewm)
+##
+## mostly obsolete, fixme
+menu "Accesorios" programs 
+{
+    menu "Sistema" programs
+    {
+        prog "Personalizar apariencia" preferences-desktop-theme lxappearance 
+        prog "Protector de Pantalla" xscreensaver xscreensaver-demo 
+        prog "Configuración de la Pantalla de Bienvenida" lightdm-gtk-greeter-settings lightdm-gtk-greeter-settings-pkexec 
+    }
+    prog Terminal terminal xterm
+    prog Claves keepassx keepassx
+    prog Calculadora calculator galculator
+}
+menu "Desarrollo" control-panel
+{
+    prog "Editor de código Geany" geany geany 
+    prog "Editor de Diagramas UML" dia dia 
+    prog "Editor de Base de Datos SqliteBrowser" sqlitebrowser sqlitebrowser
+}
+menu "Internet" programs 
+{
+    prog "Navegador Web Firefox" firefox firefox
+}
+menu "Multimedia" programs 
+{
+    prog "Reproductor de Música" mediaplayer xterm -e mocp -T gabriel_gray_theme 
+    prog "Reproductor de Video"  mpv mpv 
+}
+menu "Oficina" programs 
+{
+    prog "Procesador de Texto" libreoffice-writer textmaker21free 
+    prog "Hoja de Cálculo" libreoffice-calc planmaker21free 
+    prog "Editor de Presentaciones" libreoffice-impress presentations21free 
+    prog "Visor PDF" text-editor zathura 
+}
+
+prog "Explorador de archivos" explorer pcmanfm 

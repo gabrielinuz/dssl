@@ -1,0 +1,34 @@
+# Black theme by Arn <arn.alduomacil@gmail.com>
+
+background				= default		default
+frame					= white		default
+window_title			= white		default
+directory				= white		default
+selected_directory		= white		default	reverse
+playlist				= white		default
+selected_playlist		= white		default	reverse
+file					= white		default
+selected_file			= white		default	reverse
+marked_file				= white		default	bold
+marked_selected_file	= white		default	bold,reverse
+info					= white		default	underline
+status					= white		default
+title					= white		default	bold
+state					= white		default
+current_time			= white		default	bold
+time_left				= white		default	bold
+total_time				= white		default	bold
+time_total_frames		= white		default
+sound_parameters		= white		default	bold
+legend					= white		default
+disabled				= white		default
+enabled					= white		default	bold
+empty_mixer_bar			= white		default
+filled_mixer_bar		= white		default	reverse
+empty_time_bar			= white		default
+filled_time_bar			= white		default	reverse
+entry					= white		default
+entry_title				= white		default
+error					= white		default	bold,underline
+message					= white		default
+plist_time				= white		default
