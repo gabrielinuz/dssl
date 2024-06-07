@@ -13,7 +13,7 @@
 ##CONFIGURAR REPOSITORIOS DEBIAN 10
 cp -f ./etc-conf-files/sources.list /etc/apt/sources.list
 apt update
-apt-get -y dist-upgrade
+#apt-get -y dist-upgrade
 
 ##MIDNIGHT COMMANDER
 apt install -y mc 
