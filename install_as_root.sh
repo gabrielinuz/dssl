@@ -24,6 +24,9 @@ apt install -y ncdu
 ##VER CONSUMO DE MEMORIA y PROCESOS
 apt install -y htop
 
+#XSERVER
+apt install -y xserver-xorg
+
 ##GRUB con temas:
 apt install -y grub2-splashimages
 apt install -y plymouth plymouth-label plymouth-themes
@@ -66,7 +69,7 @@ apt install -y firmware-linux-nonfree
 apt install -y libunique-1.0-0 lxpolkit lxsession-data
 
 ##INSTALAR UN GESTOR DE INICIO LIGHTDM ES LIVIANO Y CONFIGURABLE
-apt --no-install-recommends install -y libindicator3-7 liblightdm-gobject-1-0 libxklavier16 lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+apt --no-install-recommends install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 
 ##CONFIGURACIÓN LIGHTDM
 cp -rf ./etc-conf-files/lightdm /etc/
@@ -77,7 +80,7 @@ apt --no-install-recommends install -y hibernate acpi-support acpid
 ##INSTALAR NETWORK MANAGER
 apt install -y network-manager network-manager-gnome wireless-tools wpasupplicant network-manager-config-connectivity-debian
 cp -f ./etc-conf-files/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf
-systemctl restart network-manager
+#systemctl restart network-manager
 
 ##PARA USAR VPN pptp y openvpn OPCIONAL:
 #apt install -y network-manager-pptp network-manager-pptp-gnome network-manager-openvpn
