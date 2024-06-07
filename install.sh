@@ -6,7 +6,7 @@
 ##              Preserve  the  entire  environment,  i.e.  it does not set HOME,
 ##              SHELL, USER nor LOGNAME.  This option is ignored if  the  option
 ##              --login is specified.
-su -p
+#su -p
 
 ##ToDo: quizá mejor descargar todo y descomprimir desde la web
 
@@ -122,7 +122,7 @@ apt --no-install-recommends install  -y arj lhasa liblz4-tool lrzip lzip lzop nc
 apt --no-install-recommends install -y flameshot
 
 ##NAVEGADOR WEB
-apt install --no-install-recommends firefox-esr firefox-esr-l10n-es-ar
+apt install --no-install-recommends -y firefox-esr firefox-esr-l10n-es-ar
 
 ##GIT
 apt install -y git
@@ -164,10 +164,10 @@ apt install -y dia dia-rib-network dia-shapes dia2code
 #apt install -y adminer
 
 ##DEVELOP-OPTION-4 SQLITE-BROWSER
-apt install sqlitebrowser
+apt install -y sqlitebrowser
 
 ##THE GEANY IDE
-apt install -y geany geany-plugins libvte-2.91
+apt install -y geany geany-plugins libvte-2.91-0
 
 ################################INSTALAR PAQUETES DEB:######################################
 
