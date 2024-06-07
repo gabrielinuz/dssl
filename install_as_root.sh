@@ -25,7 +25,7 @@ apt install -y ncdu
 apt install -y htop
 
 #XSERVER
-apt install -y xserver-xorg
+apt install -y xserver-xorg xserver-xorg-video-all
 
 ##GRUB con temas:
 apt install -y grub2-splashimages
