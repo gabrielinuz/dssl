@@ -27,18 +27,18 @@ apt install -y htop
 #XSERVER x11-server-utils for xrdb command
 apt install -y xserver-xorg xserver-xorg-video-all x11-server-utils
 
-##GRUB con temas:
-apt install -y grub2-splashimages
-apt install -y plymouth plymouth-label plymouth-themes
-cp -f /etc/grub.d/05_debian_theme /etc/default/grub.d
-cp -f /etc/grub.d/05_debian_theme /etc/default/grub.d
-cp -f ./etc-conf-files/grub /etc/default/grub
+##GRUB con temas: -> To Do
+#apt install -y grub2-splashimages
+#apt install -y plymouth plymouth-label plymouth-themes
+#cp -f /etc/grub.d/05_debian_theme /etc/default/grub.d
+#cp -f /etc/grub.d/05_debian_theme /etc/default/grub.d
+#cp -f ./etc-conf-files/grub /etc/default/grub
 
 
 #		Editar el archivo /etc/default/grub
 #		donde dice: GRUB_CMDLINE_LINUX_DEFAULT="quiet"
 #		agregar splash así: GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
-update-grub
+#update-grub
 
     ##COMO USAR PLYMOUTH:
     ##Plymouth is a bootsplash for Linux supporting animations using Direct Rendering Manager and KMS driver. It gets ##packed into the initrd. Besides eye-candy, Plymouth also handles user interaction during boot. Wikipedia
