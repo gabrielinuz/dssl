@@ -1,0 +1,5 @@
+Instrucciones previas de descarga de repositorio y pasos git
+
+No se copia correctamente el fondo de escritorio.
+
+No se copió la configuración de midgnight commander.

@@ -24,8 +24,8 @@ apt install -y ncdu
 ##VER CONSUMO DE MEMORIA y PROCESOS
 apt install -y htop
 
-#XSERVER
-apt install -y xserver-xorg xserver-xorg-video-all
+#XSERVER x11-server-utils for xrdb command
+apt install -y xserver-xorg xserver-xorg-video-all x11-server-utils
 
 ##GRUB con temas:
 apt install -y grub2-splashimages
@@ -52,7 +52,10 @@ update-grub
     ##    plymouth-set-default-theme YOURTHEME -R
 
 ##ICEWM
-apt install -y icewm-common libao-common libao4 libglade2-0 libjpeg-turbo-progs libturbojpeg0 xscreensaver xscreensaver-data
+apt install -y icewm
+
+##XSCREENSAVER
+apt install -y xscreensaver xscreensaver-data
 
 ##PARA GESTIONAR ESCRITORIO Y COMO EXPLORADOR DE ARCHIVOS PCMANFM CON RECOMENDADOS:	
 apt install -y --no-install-recommends pcmanfm
@@ -88,8 +91,8 @@ cp -f ./etc-conf-files/NetworkManager.conf /etc/NetworkManager/NetworkManager.co
 ##archivos de escritorio:
 apt install -y desktop-file-utils libdbus-glib-1-2 libnotify4
 
-#gnome theme para tema oscuro en apps gtk como geany
-apt install -y gnome-themes-standard
+#gnome theme para tema oscuro en apps gtk como geany Awaita
+apt install -y gnome-themes-standard gnome-themes-extra
 
 ##AUTOMONTAJE
 apt install -y dosfstools eject exfat-fuse exfat-utils fuse gdisk gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0 libatasmart4 libbdplus0 libblockdev-crypto2 libblockdev-fs libblockdev-loop2 libblockdev-part-err2 libblockdev-part libblockdev-swap2 libblockdev-utils2 libblockdev2 libbluray2 libgck-1-0 libgcr-base-3-1 libgpgme11 libnspr4 libnss3 libntfs-3g883 libparted-fs-resize0 libparted2 libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0 libsecret-1-0 libsecret-common libudisks2-0 libvolume-key1 ntfs-3g parted policykit-1 udisks2 libayatana-appindicator3-1 libayatana-ido3-0.4-0 libayatana-indicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4 libnma0 network-manager-gnome policykit-1-gnome network-manager-config-connectivity-debian

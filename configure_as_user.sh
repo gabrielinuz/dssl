@@ -26,7 +26,7 @@ cp -f ./home-conf-files/profile ~/.profile
 ##CONFIGURACIÓN XTERM:
 cp -f ./home-conf-files/Xresources ~/.Xresources
 ##actualizar configuración de xterm con entorno X iniciado
-#xrdb -merge ~/.Xresources
+xrdb -merge ~/.Xresources
 
 ##CONFIGURACIÓN GEANY:
 cp -rf ./home-conf-files/config/geany ~/.config/
