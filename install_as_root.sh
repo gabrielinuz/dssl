@@ -16,16 +16,13 @@ apt update
 #apt-get -y dist-upgrade
 
 ##MIDNIGHT COMMANDER
-apt install -y mc 
+apt install -y mc
 
 ##VER CONSUMO DE DISCO DE CADA DIRECTORIO
 apt install -y ncdu
 
 ##VER CONSUMO DE MEMORIA y PROCESOS
 apt install -y htop
-
-#XSERVER x11-server-utils for xrdb command
-apt install -y xserver-xorg xserver-xorg-video-all x11-server-utils
 
 ##GRUB con temas: -> To Do
 #apt install -y grub2-splashimages
@@ -50,6 +47,11 @@ apt install -y xserver-xorg xserver-xorg-video-all x11-server-utils
     ##    run in terminal as a root:
 
     ##    plymouth-set-default-theme YOURTHEME -R
+
+##XSERVER x11-server-utils for xrdb command
+apt install -y xserver-xorg 
+apt install -y xserver-xorg-video-all 
+apt install -y x11-xserver-utils
 
 ##ICEWM
 apt install -y icewm
@@ -95,7 +97,7 @@ apt install -y desktop-file-utils libdbus-glib-1-2 libnotify4
 apt install -y gnome-themes-standard gnome-themes-extra
 
 ##AUTOMONTAJE
-apt install -y dosfstools eject exfat-fuse exfat-utils fuse gdisk gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0 libatasmart4 libbdplus0 libblockdev-crypto2 libblockdev-fs libblockdev-loop2 libblockdev-part-err2 libblockdev-part libblockdev-swap2 libblockdev-utils2 libblockdev2 libbluray2 libgck-1-0 libgcr-base-3-1 libgpgme11 libnspr4 libnss3 libntfs-3g883 libparted-fs-resize0 libparted2 libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0 libsecret-1-0 libsecret-common libudisks2-0 libvolume-key1 ntfs-3g parted policykit-1 udisks2 libayatana-appindicator3-1 libayatana-ido3-0.4-0 libayatana-indicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4 libnma0 network-manager-gnome policykit-1-gnome network-manager-config-connectivity-debian
+apt install -y dosfstools eject exfat-fuse fuse gdisk gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0 libatasmart4 libbdplus0 libblockdev-crypto2 libblockdev-fs libblockdev-loop2 libblockdev-part-err2 libblockdev-part libblockdev-swap2 libblockdev-utils2 libblockdev2 libbluray2 libgck-1-0 libgcr-base-3-1 libgpgme11 libnspr4 libnss3 libntfs-3g883 libparted-fs-resize0 libparted2 libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0 libsecret-1-0 libsecret-common libudisks2-0 libvolume-key1 ntfs-3g parted policykit-1 udisks2 libayatana-appindicator3-1 libayatana-ido3-0.4-0 libayatana-indicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4 libnma0 network-manager-gnome policykit-1-gnome network-manager-config-connectivity-debian
 
 ##SONIDO, NO USAR PULSEAUDIO:
 apt install -y alsa-utils
