@@ -21,3 +21,16 @@ wallpaper=./.default_background.jpeg
 #PCMANFM configurar para que no aparezcan archivos ocultos por defecto:
 ./config/pcmanfm/default/pcmanfm.config
 show_hidden=0
+
+#Borrar los archivos o directorios ocultos por si existen, usar if en bash
+if [ -d "./.icewm" ];
+	then rm -r ./.icewm;
+fi
+
+#Configurar para que se ajuste el tema gtk y se instale el tema oscuro adwaita-dark
+#No se copió la configuración de tema GTK, solucionado:
+##CONFIGURACIÓN GTK3.0
+cp -rf ./home-conf-files/config/gtk-3.0 ~/.config/
+
+##CONFIGURACIÓN Midnight Commander
+cp -rf ./home-conf-files/config/mc ~/.config/
