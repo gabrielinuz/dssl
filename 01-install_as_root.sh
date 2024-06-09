@@ -63,7 +63,7 @@ apt install -y xscreensaver xscreensaver-data
 apt install -y --no-install-recommends pcmanfm
 
 ##INSTALAR FIRMWARES PARA PLACASWIFI
-apt install -y firmware-linux-nonfree
+apt install -y firmware-linux-free
 
 
 ##INSTALAR POLICYKIT (NORMALMENTE SE INSTALA CON OTROS PAQUETES, PAQUETE: policykit-1) 
@@ -80,7 +80,9 @@ apt --no-install-recommends install -y lightdm lightdm-gtk-greeter lightdm-gtk-g
 cp -rf ./etc-conf-files/lightdm /etc/
 
 ##INSTALAR PARA PODER INVERNAR
-apt --no-install-recommends install -y hibernate acpi-support acpid
+apt --no-install-recommends install -y acpi-support
+apt --no-install-recommends install -y acpid
+apt --no-install-recommends install -y hibernate
 
 ##INSTALAR NETWORK MANAGER
 apt install -y network-manager network-manager-gnome wireless-tools wpasupplicant network-manager-config-connectivity-debian
@@ -94,7 +96,8 @@ cp -f ./etc-conf-files/NetworkManager.conf /etc/NetworkManager/NetworkManager.co
 apt install -y desktop-file-utils libdbus-glib-1-2 libnotify4
 
 #gnome theme para tema oscuro en apps gtk como geany Awaita
-apt install -y gnome-themes-standard gnome-themes-extra
+apt install -y gnome-themes-standard 
+apt install -y gnome-themes-extra
 
 ##AUTOMONTAJE
 apt install -y dosfstools eject exfat-fuse fuse gdisk gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0 libatasmart4 libbdplus0 libblockdev-crypto2 libblockdev-fs libblockdev-loop2 libblockdev-part-err2 libblockdev-part libblockdev-swap2 libblockdev-utils2 libblockdev2 libbluray2 libgck-1-0 libgcr-base-3-1 libgpgme11 libnspr4 libnss3 libntfs-3g883 libparted-fs-resize0 libparted2 libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0 libsecret-1-0 libsecret-common libudisks2-0 libvolume-key1 ntfs-3g parted policykit-1 udisks2 libayatana-appindicator3-1 libayatana-ido3-0.4-0 libayatana-indicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4 libnma0 network-manager-gnome policykit-1-gnome network-manager-config-connectivity-debian
@@ -114,9 +117,14 @@ apt install -y lxappearance
 #ajuste de brillos
 apt install -y xbacklight 
 
+##TERMINAL UTILS
 ##PARA RENOMBRAR MASIVAMENTE	
 ##se usa así rename -f 's/.png/.xpm/' *.png
 apt install -y rename
+
+##locate, se usa para buscar facilmente, primero se debe actualizar la base de datos de búsqueda con
+##el comando updatedb, ejecutar updatedb como root
+apt install -y locate
 
 ######################################################################################################################
 ######################################################################################################################

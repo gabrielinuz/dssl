@@ -2,7 +2,7 @@
 sleep 1
 volumeicon &
 nm-applet &
-pcmanfm --desktop&
+#pcmanfm --desktop&
 lxpolkit &
 xscreensaver -no-splash&
 xbacklight -set 20

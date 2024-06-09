@@ -397,10 +397,12 @@ DesktopBackgroundCenter=0 # 0 / 1
 DesktopBackgroundScaled=1 # 0 / 1
 
 # Desktop background color
-DesktopBackgroundColor="rgb:31/aa/ff"
+#DesktopBackgroundColor="rgb:31/aa/ff"
+DesktopBackgroundColor="rgb:00/00/00"
 
 # Desktop wallpaper image
-DesktopBackgroundImage="eos.jpg"
+#DesktopBackgroundImage="eos.jpg"
+DesktopBackgroundImage="default_background.jpeg"
 
 # Color to use for transparent applications
 DesktopTransparencyColor="rgb:FF/FF/FF"
