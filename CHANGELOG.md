@@ -17,3 +17,7 @@ en el archivo de aplicaciones al inicio ./icewm/startup comentar la siguiente l√
 #No se copia correctamente el fondo de escritorio:
 -editar .config/pcmanfm/desktop-items-0.conf, ya que lo busca en el home:
 wallpaper=./.default_background.jpeg 
+
+#PCMANFM configurar para que no aparezcan archivos ocultos por defecto:
+./config/pcmanfm/default/pcmanfm.config
+show_hidden=0

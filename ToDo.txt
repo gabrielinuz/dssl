@@ -1,11 +1,10 @@
 Instrucciones previas de descarga de repositorio y pasos git
 
 No se copió la configuración de midgnight commander (ver como copiar el tema, me falta eso)
+Hay que ver en soluciones como se edita el ini para que cambien los colores.
 
 No se copió la configuración de tema GTK (quizá deba ser como root)
 
 Hay que borrar los archivos o directorios ocultos por si existen, usar if en bash
 
-PCMANFM configurar para que no aparezcan archivos ocultos por defecto.
-
-COnfigurar para que se ajuste el tema gtk y se instale el tema oscuro adwaita-dark
+Configurar para que se ajuste el tema gtk y se instale el tema oscuro adwaita-dark

@@ -93,14 +93,64 @@ cp -f ./etc-conf-files/NetworkManager.conf /etc/NetworkManager/NetworkManager.co
 #apt install -y network-manager-pptp network-manager-pptp-gnome network-manager-openvpn
 
 ##archivos de escritorio:
-apt install -y desktop-file-utils libdbus-glib-1-2 libnotify4
+apt install -y desktop-file-utils 
+apt install -y libdbus-glib-1-2 
+apt install -y libnotify4
 
 #gnome theme para tema oscuro en apps gtk como geany Awaita
 apt install -y gnome-themes-standard 
 apt install -y gnome-themes-extra
 
 ##AUTOMONTAJE
-apt install -y dosfstools eject exfat-fuse fuse gdisk gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0 libatasmart4 libbdplus0 libblockdev-crypto2 libblockdev-fs libblockdev-loop2 libblockdev-part-err2 libblockdev-part libblockdev-swap2 libblockdev-utils2 libblockdev2 libbluray2 libgck-1-0 libgcr-base-3-1 libgpgme11 libnspr4 libnss3 libntfs-3g883 libparted-fs-resize0 libparted2 libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0 libsecret-1-0 libsecret-common libudisks2-0 libvolume-key1 ntfs-3g parted policykit-1 udisks2 libayatana-appindicator3-1 libayatana-ido3-0.4-0 libayatana-indicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4 libnma0 network-manager-gnome policykit-1-gnome network-manager-config-connectivity-debian
+apt install -y dosfstools 
+apt install -y eject
+apt install -y exfat-fuse 
+apt install -y fuse 
+apt install -y gdisk 
+apt install -y gvfs 
+apt install -y gvfs-common 
+apt install -y gvfs-daemons 
+apt install -y gvfs-libs 
+apt install -y libaacs0 
+apt install -y libatasmart4 
+apt install -y libbdplus0 
+apt install -y libblockdev-crypto2 
+apt install -y libblockdev-fs 
+apt install -y libblockdev-loop2 
+apt install -y libblockdev-part-err2 
+apt install -y libblockdev-part 
+apt install -y libblockdev-swap2 
+apt install -y libblockdev-utils2 
+apt install -y libblockdev2 
+apt install -y libbluray2 
+apt install -y libgck-1-0 
+apt install -y libgcr-base-3-1 
+apt install -y libgpgme11 
+apt install -y libnspr4 
+apt install -y libnss3 
+apt install -y libntfs-3g883 
+apt install -y libparted-fs-resize0 
+apt install -y libparted2 
+apt install -y libpolkit-agent-1-0 
+apt install -y libpolkit-backend-1-0 
+apt install -y libpolkit-gobject-1-0 
+apt install -y libsecret-1-0 
+apt install -y libsecret-common 
+apt install -y libudisks2-0 
+apt install -y libvolume-key1 
+apt install -y ntfs-3g 
+apt install -y parted 
+apt install -y policykit-1 
+apt install -y udisks2 
+apt install -y libayatana-appindicator3-1 
+apt install -y libayatana-ido3-0.4-0 
+apt install -y libayatana-indicator3-7 
+apt install -y libdbusmenu-glib4 
+apt install -y libdbusmenu-gtk3-4 
+apt install -y libnma0 
+apt install -y network-manager-gnome 
+apt install -y policykit-1-gnome 
+apt install -y network-manager-config-connectivity-debian
 
 ##SONIDO, NO USAR PULSEAUDIO:
 apt install -y alsa-utils
