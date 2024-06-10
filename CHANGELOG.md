@@ -34,3 +34,10 @@ cp -rf ./home-conf-files/config/gtk-3.0 ~/.config/
 
 ##CONFIGURACIÓN Midnight Commander
 cp -rf ./home-conf-files/config/mc ~/.config/
+
+##No se copió la configuración de midgnight commander (ver como copiar el tema, me falta eso)
+el tema se creó y se nombró dssl.ini y se copia en 
+/usr/share/mc/skins/
+
+##Corrección de repositorios consejo de Debian.org
+La 'distribución' puede ser el nombre en clave de la publicación ( stretch, buster, bullseye, bookworm, sid) o la clase de publicación (oldoldstable, oldstable, stable, testing, unstable) respectivamente. Si quieres seguir una clase de publicación usa el nombre de la clase, si quieres seguir una versión principal Debian usa el nombre en clave. Evita usar stable en tu sources.list ya que provoca sorpresas y sistemas rotos cuando sale la siguiente publicación; actualizar a una publicación nueva debería ser una acción deliberada y cuidadosa, y editar un fichero cada dos años no es una molestia.

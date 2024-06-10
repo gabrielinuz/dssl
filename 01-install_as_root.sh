@@ -17,6 +17,8 @@ apt update
 
 ##MIDNIGHT COMMANDER
 apt install -y mc
+cp ./usr-conf-files/share/mc/skins/dssl.ini /usr/share/mc/skins/dssl.ini
+cp -rf ./root-conf-files/mc /root/
 
 ##VER CONSUMO DE DISCO DE CADA DIRECTORIO
 apt install -y ncdu

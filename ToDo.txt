@@ -1,6 +1,3 @@
 Instrucciones previas de descarga de repositorio y pasos git
 
-No se copió la configuración de midgnight commander (ver como copiar el tema, me falta eso)
-Hay que ver en soluciones como se edita el ini para que cambien los colores.
-
 
