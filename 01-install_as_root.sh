@@ -234,6 +234,9 @@ apt install -y dia dia-rib-network dia-shapes dia2code
 ##DEVELOP-OPTION-4 SQLITE-BROWSER
 apt install -y sqlitebrowser
 
+##THE C++ AND C COMPILER AND DEBUGGER
+apt install -y g++
+
 ##THE GEANY IDE
 apt install -y geany geany-plugins libvte-2.91-0
 
