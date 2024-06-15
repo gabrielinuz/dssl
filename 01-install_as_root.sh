@@ -10,7 +10,7 @@
 
 ##ToDo: quizá mejor descargar todo y descomprimir desde la web
 
-##CONFIGURAR REPOSITORIOS DEBIAN 10
+##CONFIGURAR REPOSITORIOS DEBIAN
 cp -f ./etc-conf-files/sources.list /etc/apt/sources.list
 apt update
 #apt-get -y dist-upgrade
