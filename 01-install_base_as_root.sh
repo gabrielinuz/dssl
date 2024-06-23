@@ -1,19 +1,8 @@
 #!/bin/bash
 ######################################################################################################################
-######################################################################################################################
-##SISTEMA
-##su -m, -p, --preserve-environment
-##              Preserve  the  entire  environment,  i.e.  it does not set HOME,
-##              SHELL, USER nor LOGNAME.  This option is ignored if  the  option
-##              --login is specified.
-#su -p
-
-##ToDo: quizá mejor descargar todo y descomprimir desde la web
-
 ##CONFIGURAR REPOSITORIOS DEBIAN
 cp -f ./etc-conf-files/sources.list /etc/apt/sources.list
 apt update
-#apt-get -y dist-upgrade
 
 ##MIDNIGHT COMMANDER
 apt install -y mc
@@ -67,7 +56,6 @@ apt install -y --no-install-recommends pcmanfm
 ##INSTALAR FIRMWARES PARA PLACASWIFI
 apt install -y firmware-linux-free
 
-
 ##INSTALAR POLICYKIT (NORMALMENTE SE INSTALA CON OTROS PAQUETES, PAQUETE: policykit-1) 
 ##PERO HAY QUE AGREGAR LA VISUALIZACIÓN DE PKEXEC: lxpolkit
 ##DEBE AGREGARSE SU EJECUCION EN EL SCRIPT STARTUP de ICEWM.
@@ -89,7 +77,6 @@ apt --no-install-recommends install -y hibernate
 ##INSTALAR NETWORK MANAGER
 apt install -y network-manager network-manager-gnome wireless-tools wpasupplicant network-manager-config-connectivity-debian
 cp -f ./etc-conf-files/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf
-#systemctl restart network-manager
 
 ##PARA USAR VPN pptp y openvpn OPCIONAL:
 #apt install -y network-manager-pptp network-manager-pptp-gnome network-manager-openvpn
@@ -182,7 +169,7 @@ apt install -y locate
 ######################################################################################################################
 ##APLICACIONES
 ##Instalar todo para descomprimir:
-	##Engrampa en vez de Xarchiver:
+##Engrampa en vez de Xarchiver:
 apt --no-install-recommends install -y engrampa
 apt --no-install-recommends install  -y arj lhasa liblz4-tool lrzip lzip lzop ncompress rar unar zip zstd unrar p7zip p7zip-full
 
@@ -192,9 +179,6 @@ apt --no-install-recommends install -y flameshot
 ##NAVEGADOR WEB
 apt install --no-install-recommends -y firefox-esr firefox-esr-l10n-es-ar
 
-##GIT
-apt install -y git
-
 ##UNA CALCULADORA:
 apt install -y galculator
     
@@ -202,7 +186,7 @@ apt install -y galculator
 apt install -y moc
 
 ##PARA VER IMAGENES EN CONSOLA
-apt install -y feh libgif7 libimlib2 yudit-common
+#apt install -y feh libgif7 libimlib2 yudit-common
 
 ##PARA VER VIDEOS:
 apt --no-install-recommends install -y mpv
@@ -210,38 +194,11 @@ apt --no-install-recommends install -y mpv
 ##LECTOR DE PDF:
 apt --no-install-recommends install -y zathura
 
-##CREADOR DE VIDEOTUTORIALES:
-apt install -y vokoscreen
-
-##PARA GESTIONAR PASSWORDS OPCIONAL
-apt --no-install-recommends install -y keepassx
-
 ##PARA REDIMENSIONAR IMAGENES:
-apt --no-install-recommends install -y imagemagick
-
-##PARA CREAR DIAGRAMAS
-apt install -y dia dia-rib-network dia-shapes dia2code
-
-##HTTP-OPTION-1 APACHE Y PHP
-#apt install -y php php-mbstring php-xml
-
-##DB-OPTION-2 MARIADB
-#apt install -y mariadb-server mariadb-client
-
-##DEVELOP-OPTION-3 ADMINER
-#apt install -y adminer
-
-##DEVELOP-OPTION-4 SQLITE-BROWSER
-apt install -y sqlitebrowser
-
-##THE C++ AND C COMPILER AND DEBUGGER
-apt install -y g++
-
-##THE GEANY IDE
-apt install -y geany geany-plugins libvte-2.91-0
+#apt --no-install-recommends install -y imagemagick
+apt install -y gpicview
 
 ################################INSTALAR PAQUETES DEB:######################################
-
 ##Iconos de temas para w98
 apt install -y ./installers/se98-icon-theme/se98-icon-theme-git_0.2.13-1_all.deb
  

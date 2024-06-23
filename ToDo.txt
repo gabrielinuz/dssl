@@ -1,3 +1,7 @@
 Instrucciones previas de descarga de repositorio y pasos git
 
+Agregar KeepassX, Vokoscreen y FlameShot al menú correspondiente
 
+Crear install all as root, as user y meter scripts individuales en un directorio.
+
+Actualizar SNIPETS!

@@ -38,6 +38,3 @@ cp -f ./home-conf-files/profile ~/.profile
 
 ##CONFIGURACIÓN XTERM:
 cp -f ./home-conf-files/Xresources ~/.Xresources
-
-##CONFIGURACIÓN GEANY:
-cp -rf ./home-conf-files/config/geany ~/.config/
