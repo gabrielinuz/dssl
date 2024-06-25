@@ -11,6 +11,12 @@ apt install -y sqlitebrowser
 ##THE C++ AND C COMPILER AND DEBUGGER
 apt install -y g++
 
+##make
+apt install -y make
+
+##cmake
+apt install -y cmake
+
 ##PYTHON....
 apt install -y python3 python3-pip 
 
