@@ -26,8 +26,25 @@ menu "Internet" programs
 }
 menu "Multimedia" programs 
 {
+    menu "Juegos" programs
+    {
+        prog "Sega Genesis Emulator" blastem blastem
+        prog "Minetest" minetest minetest
+        prog "Battle for Wesnoth" wesnoth wesnoth
+        prog "Supertux" supertux2 supertux2
+    }
+    prog "Reproductor Multimedia VLC" vlc vlc
     prog "Reproductor de Música" mediaplayer xterm -e mocp -T gabriel_gray_theme 
     prog "Reproductor de Video"  mpv mpv 
+}
+menu "Diseño y Dibujo" programs
+{
+    prog "Krita - Dibujo en imágenes" krita krita
+    prog "Gimp - Edición de imágenes" gimp gimp
+    prog "Inkscape - Diseño Vectorial" inkscape inkscape
+    prog "Scribus - Edición de revistas" scribus scribus
+    prog "Sweet Home 3d - Diseño de casas" sweethome3d sweethome3d
+    prog "Blender - Modelado 3d" blender blender
 }
 menu "Oficina" programs 
 {

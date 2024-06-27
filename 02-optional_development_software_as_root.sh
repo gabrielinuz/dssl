@@ -20,6 +20,9 @@ apt install -y cmake
 ##PYTHON....
 apt install -y python3 python3-pip 
 
+##PYTHON TKinter
+apt install -y python3-tk
+
 ##THE GEANY IDE
 apt install -y geany geany-plugins libvte-2.91-0#!/bin/bash
 
