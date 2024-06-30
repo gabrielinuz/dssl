@@ -40,8 +40,7 @@ key "Super+E"				pcmanfm
 key "Super+F"				spacefm
 key "Super+T"				xterm
 key "Super+I"				geany
-key "Super+C"				/home/gngf/applications/Telegram/Telegram
-key "Super+W"				vivaldi
+key "Super+W"				firefox
 key "Super+G"				galculator
 
 ##Llamada a flameshot con la opción gui para que directamente se establezca el modo captura:
